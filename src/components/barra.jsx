@@ -10,7 +10,7 @@ function ColorSchemesExample() {
         <Container>
           <Navbar.Brand href="#Inicio">Lito Coiffeur</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#Inicio">Inicio!</Nav.Link>
+            <Nav.Link href="#Inicio">Inicio</Nav.Link>
             <Nav.Link href="#productos">Productos</Nav.Link>
             <Nav.Link href="#turnos">Turnos</Nav.Link>
             <Nav.Link href="#nosotros">Nosotros</Nav.Link>
