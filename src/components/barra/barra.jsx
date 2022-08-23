@@ -2,11 +2,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Barra.css';
+import CartWidget from '../carrito/carrito';
 
 function ColorSchemesExample() {
   return (
     <>
-      <Navbar bg="light" variant="light">
+      <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#Inicio">Lito Coiffeur</Navbar.Brand>
           <Nav className="me-auto">
@@ -14,6 +15,7 @@ function ColorSchemesExample() {
             <Nav.Link href="#productos">Productos</Nav.Link>
             <Nav.Link href="#turnos">Turnos</Nav.Link>
             <Nav.Link href="#nosotros">Nosotros</Nav.Link>
+            <Nav.Link href="#carrito"> <CartWidget /> </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
