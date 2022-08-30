@@ -1,5 +1,5 @@
 import './contador.css';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 
 export const ItemCount = ({initial, stock, onAdd}) => {
@@ -13,9 +13,7 @@ export const ItemCount = ({initial, stock, onAdd}) => {
     setCount(count + 1); 
    }
 
-   useEffect(() => {
-    setCount(parseInt(initial));
-   })
+  
 
     return(
         <div className='counter'>
