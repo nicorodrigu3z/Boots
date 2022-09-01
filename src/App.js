@@ -4,6 +4,7 @@ import ColorSchemesExample from './components/barra/barra';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer/index';
 import React from 'react';
+import ItemDetailContainer from './components/itemDetailContainer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         
           <ItemListContainer></ItemListContainer>
           
+          <ItemDetailContainer></ItemDetailContainer>
          
       </header>
     </div>
