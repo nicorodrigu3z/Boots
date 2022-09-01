@@ -6,12 +6,21 @@ import ItemListContainer from './components/ItemListContainer/index';
 
 function App() {
   return (
+    <>
+    
+    
     <div className="App">
       <header>
         <ColorSchemesExample></ColorSchemesExample>
-        <ItemListContainer></ItemListContainer>
+        
+          <ItemListContainer></ItemListContainer>
+          
+         
       </header>
     </div>
+
+   
+    </>
   );
 }
 

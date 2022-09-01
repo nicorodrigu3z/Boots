@@ -25,7 +25,7 @@ export const ItemListContainer = () =>{
 
   }, [])
 
- const onAdd = (quantity) => {
+  const onAdd = (quantity) => {
   console.log(`compraste ${quantity} unidades`);
 }
 
