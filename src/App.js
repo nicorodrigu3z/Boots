@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ColorSchemesExample from './components/barra/barra';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer/index';
+import React from 'react';
 
 function App() {
   return (

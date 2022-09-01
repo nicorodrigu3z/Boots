@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Barra.css';
 import CartWidget from '../carrito/carrito';
+import React from 'react';
 
 function ColorSchemesExample() {
   return (
