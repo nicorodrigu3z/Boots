@@ -3,19 +3,21 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Barra.css';
 import CartWidget from '../carrito/carrito';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function ColorSchemesExample() {
   return (
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#Inicio">Lito Coiffeur</Navbar.Brand>
+          <Navbar.Brand >Lito Coiffeur</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#Inicio">Inicio</Nav.Link>
-            <Nav.Link href="#productos">Productos</Nav.Link>
-            <Nav.Link href="#turnos">Turnos</Nav.Link>
-            <Nav.Link href="#nosotros">Nosotros</Nav.Link>
-            <Nav.Link href="#carrito"> <CartWidget /> </Nav.Link>
+            <NavLink to='/'> <Nav.Link  >Inicio</Nav.Link> </NavLink>
+            <NavLink to='/productos'> <Nav.Link >Productos</Nav.Link>  </NavLink>
+            <NavLink to='/turnos'> <Nav.Link >Turnos</Nav.Link>  </NavLink>
+            <NavLink to='/contactos'> <Nav.Link >Nosotros</Nav.Link>  </NavLink>
+            <NavLink to='/carrito'> <Nav.Link > <CartWidget /> </Nav.Link>  </NavLink>
           </Nav>
         </Container>
       </Navbar>

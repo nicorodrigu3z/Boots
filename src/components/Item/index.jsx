@@ -4,10 +4,13 @@ import React from 'react';
 
 const Item = ({data}) => {
     return(
-        <div>
+        <div className='contenedor'>
             <div className='product' key={data.name}>
-             <img src={data.image}></img>
-             <h1>{data.tittle}</h1>
+               <img  className='img' src={data.image}></img>
+             <div className='informacion'>
+               <h1>{data.title}</h1>
+               <h2>{data.precio}</h2>
+             </div>
             </div>
         </div>
     );
