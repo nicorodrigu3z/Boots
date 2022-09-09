@@ -13,11 +13,11 @@ function ColorSchemesExample() {
         <Container>
           <Navbar.Brand >Lito Coiffeur</Navbar.Brand>
           <Nav className="me-auto">
-            <NavLink to='/'> <Nav.Link  >Inicio</Nav.Link> </NavLink>
-            <NavLink to='/productos'> <Nav.Link >Productos</Nav.Link>  </NavLink>
-            <NavLink to='/turnos'> <Nav.Link >Turnos</Nav.Link>  </NavLink>
-            <NavLink to='/contactos'> <Nav.Link >Nosotros</Nav.Link>  </NavLink>
-            <NavLink to='/carrito'> <Nav.Link > <CartWidget /> </Nav.Link>  </NavLink>
+            <NavLink to='/'> Inicio </NavLink>
+            <NavLink to='/productos'> Productos  </NavLink>
+            <NavLink to='/turnos'> Turnos </NavLink>
+            <NavLink to='/contactos'> Nosotros </NavLink>
+            <NavLink to='/carrito'> <CartWidget />   </NavLink>
           </Nav>
         </Container>
       </Navbar>

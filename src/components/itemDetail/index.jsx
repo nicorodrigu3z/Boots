@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import getFetch from '../../helper/helper'
 import React from "react";
 import './itemDetail.css';
+import { useParams } from "react-router-dom";
 
 const ItemDetail = () => {
 const [data, setData] = useState({})
 const [loading, setLoading] = useState(true)
+const { detalleId } = useParams();
 
 useEffect(() => {
     getFetch
@@ -13,7 +15,12 @@ useEffect(() => {
         setData(response.find(prod => prod.id == 1))
         setLoading(false)
     })
+
+    getFetch.then(res => setData(res.find(producto => producto.id === parseInt(detalleId)))
+    )
+
 }, [])
+
 console.log(data)
      return (
         <div className="item-container">

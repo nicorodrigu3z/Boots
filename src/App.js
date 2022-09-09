@@ -18,7 +18,7 @@ function App() {
       <ColorSchemesExample></ColorSchemesExample>
         <Routes>
           <Route path='/' element={<ItemListContainer></ItemListContainer>}></Route>
-          <Route path='/productos' element={<ItemListContainer></ItemListContainer>}></Route>
+          <Route path='/productos/:' element={<ItemListContainer></ItemListContainer>}></Route>
           <Route path='/carrito' element={<CartWidget></CartWidget>}></Route>
           <Route path='/detalle' element={<ItemDetailContainer></ItemDetailContainer>}></Route>
           <Route path='/turnos' element={<Turnos></Turnos>}></Route>
