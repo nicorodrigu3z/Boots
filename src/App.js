@@ -9,21 +9,25 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartWidget from './components/carrito/carrito.jsx'
 import Turnos from './components/turnos/index'
 import Contacto from './components/contacto/index';
+import CartProvider from './context/CartContext';
+
 
 function App() {
   return (
     <>
     
     <BrowserRouter>
-      <ColorSchemesExample></ColorSchemesExample>
+        <CartProvider>
+        <ColorSchemesExample></ColorSchemesExample>
         <Routes>
           <Route path='/' element={<ItemListContainer></ItemListContainer>}></Route>
           <Route path='/productos/:' element={<ItemListContainer></ItemListContainer>}></Route>
           <Route path='/carrito' element={<CartWidget></CartWidget>}></Route>
-          <Route path='/detalle' element={<ItemDetailContainer></ItemDetailContainer>}></Route>
+          <Route path='/detalle/:detalleId' element={<ItemDetailContainer></ItemDetailContainer>}></Route>
           <Route path='/turnos' element={<Turnos></Turnos>}></Route>
           <Route path='/contacto' element={<Contacto></Contacto>}></Route>
         </Routes>
+        </CartProvider>
     </BrowserRouter>
    
     </>

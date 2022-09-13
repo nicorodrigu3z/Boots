@@ -1,10 +1,14 @@
 import './item.css';
 
-import React from 'react';
+import React, {useContext} from 'react';
 
 import { Link } from 'react-router-dom';
 
+
+
 const Item = ({data}) => {
+
+
     return(
       <Link to={`/detalle/${data.id}`}>
         <div className='contenedor'>
