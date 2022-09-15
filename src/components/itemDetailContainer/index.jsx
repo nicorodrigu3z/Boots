@@ -23,7 +23,7 @@ return(
         </div>
         {
            goToCart
-           ? <Link to='/cart'>Terminar compra</Link>
+           ? <Link to='/carrito'>Terminar compra</Link>
            : <ItemCount initial={3} stock={5} onAdd={onAdd} ></ItemCount>
         }
     </div>
